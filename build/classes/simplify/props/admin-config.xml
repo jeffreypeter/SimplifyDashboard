@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<authentication>
+		<user-list>
+			<user>
+				<id>admin</id>
+				<password>password</password>
+				<role>admin</role>
+			</user>
+			<user>
+				<id>soauser</id>
+				<password>soauser</password>
+				<role>soa</role>
+			</user>
+			<user>
+				<id>user</id>
+				<password>test</password>
+				<role>monitor</role>
+			</user>
+		</user-list>				
+	</authentication>
+	<authorization>
+		<resource-list>
+			<resource>
+				<url>file-sharing</url>
+				<access>					
+					<role>admin</role>
+				</access>
+			</resource>
+			<resource>
+				<url>chat</url>
+				<access>
+					<role>soa</role>
+				</access>
+			</resource>
+			
+		</resource-list>
+	</authorization>
+</config>

@@ -1,0 +1,72 @@
+.getDetails:HOVER {
+	cursor: pointer;
+}
+
+.timer {
+	
+}
+.timer:hover {
+	cursor: pointer;
+}
+
+#popup {
+	display:none;
+}
+
+.popup-container {	
+    margin-left: auto;
+    margin-right: auto;   
+    display: inline-block;
+    opacity: 0.9;
+    top: 20%;
+    left:10%;
+    position: absolute;
+    z-index: 99999;
+}
+
+#popup-title {
+}
+#popup-close {
+	float: right;
+	width: 20px;
+}
+#popup-close:hover {
+	cursor: pointer;
+}
+#popup-body {
+	max-width:1100px;
+	min-width: 200px;
+}
+
+#popup textarea {
+	width: 900px;
+	height: 350px;	
+	max-width:1000px;
+	max-height: 450px;
+}
+.popup-title {
+	min-height: 15px;
+}
+.toolpanel {
+	padding: 5px;
+	margin-bottom: 15px;
+	
+}
+.toolpanel-inputleft {
+	float: left;
+	margin-right: 5px;
+	margin-bottom:10px; 
+}
+.form-control-width {
+	max-width: 350px;
+	display: inline-block;
+}
+
+.label-value {
+	
+}
+
+.bpm-received{
+	background-color: rgba(255, 255, 236, 0.54);
+	border-color: #eea236;
+}

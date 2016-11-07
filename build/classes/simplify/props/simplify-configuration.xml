@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- config.xml -->
+<configuration>
+  <env />
+  <xml fileName="database-config.xml" />
+  <xml fileName="workflow-config.xml" />
+  <xml fileName="admin-config.xml"/>
+</configuration>

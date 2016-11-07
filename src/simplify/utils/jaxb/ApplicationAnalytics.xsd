@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.SimplifyDashboard.com/ApplicationAnalytics" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.SimplifyDashboard.com/ApplicationAnalytics">
+
+
+    <complexType name="Month">
+    	<sequence>
+    		<element name="day" type="tns:Day" maxOccurs="unbounded"
+    			minOccurs="0">
+    		</element>
+    	</sequence>
+        <attributeGroup ref="tns:TimeDetails"></attributeGroup>
+    </complexType>
+
+    <complexType name="Day">
+    	<sequence>
+    		<element name="time" type="tns:Time" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+        <attributeGroup ref="tns:TimeDetails"></attributeGroup>
+    </complexType>
+
+    <complexType name="Time">
+    	<sequence></sequence>
+        <attributeGroup ref="tns:TimeDetails"></attributeGroup>
+    </complexType>
+
+    <complexType name="Year">
+    	<sequence>
+    		<element name="month" type="tns:Month" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+        <attributeGroup ref="tns:TimeDetails"></attributeGroup>
+    </complexType>
+
+
+
+    <attributeGroup name="TimeDetails">
+    	<attribute name="id" type="int"></attribute>
+    	<attribute name="count" type="int"></attribute>
+    	<attribute name="complete" type="boolean"></attribute>
+    </attributeGroup>
+
+
+
+
+
+    <complexType name="ApplicationAnalytics">
+    	<sequence>
+    		<element name="year" type="tns:Year" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+
+    <element name="application" type="tns:ApplicationAnalytics"></element>
+</schema>
